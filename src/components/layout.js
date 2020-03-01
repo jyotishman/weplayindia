@@ -26,18 +26,19 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div style={{}}>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+        <footer
+          style={{
+            backgroundColor: "#ff9800",
+            color: "#333",
+            padding: 20,
+            textAlign: "center",
+          }}
+        >
+          © {new Date().getFullYear()}, WePlayIndia
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <p>For further queries, kindly email : raj@weplayindia.co.in </p>
         </footer>
       </div>
     </>
